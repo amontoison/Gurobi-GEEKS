@@ -1,0 +1,8 @@
+[deps]
+CUDA = "052768ef-5323-5732-b1bb-66c8b64840ba"
+CUDSS = "45b445bb-4962-46a0-9369-b4df9d0f772e"
+HarwellRutherfordBoeing = "ce388394-9b3f-5993-a911-eb95552e4f2e"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+MAT = "23992714-dd62-5051-b70f-ba57cb901cac"
+MatrixMarket = "4d4711f2-db25-561a-b6b3-d35e7d4047d3"
+SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
