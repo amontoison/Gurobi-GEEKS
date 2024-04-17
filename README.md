@@ -5,6 +5,8 @@
 ```
 cd MadNLP
 julia --project
+```
+```julia
 julia> ]
 (MadNLP) pkg> instantiate
 julia> include("madnlp_benchmarks.jl")
@@ -15,6 +17,8 @@ julia> include("madnlp_benchmarks.jl")
 ```
 cd CUDSS
 julia --project
+```
+````julia
 julia> ]
 (MadNLP) pkg> instantiate
 julia> include("cudss_benchmarks.jl")
