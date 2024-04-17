@@ -9,7 +9,7 @@ path_b = "./data/rhs.txt"
 # path2 = "./data/1138_bus.rb"
 # path3 = "./data/1138_bus.mat"
 
-A = load_matrix(path_A) 
+A = load_matrix(path_A)
 b = load_rhs(path_b)
 x = similar(b)
 

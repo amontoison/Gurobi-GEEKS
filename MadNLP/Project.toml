@@ -1,0 +1,6 @@
+[deps]
+CUDA = "052768ef-5323-5732-b1bb-66c8b64840ba"
+ExaModels = "1037b233-b668-4ce9-9b63-f9f681f55dd2"
+ExaModelsExamples = "ff8351d9-12a3-4c2d-a61a-51dfbae68567"
+MadNLP = "2621e9c9-9eb4-46b1-8089-e8c72242dfb6"
+MadNLPGPU = "d72a61cc-809d-412f-99be-fd81f4b8a598"
