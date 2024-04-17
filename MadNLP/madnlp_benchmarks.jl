@@ -36,13 +36,16 @@ opf1 = "pglib_opf_case4020_goc.m"
 
 # GPU
 if CUDA.functional()
+  println("--- GPU ---")
   # It will automatically download the case file for you.
   model = ac_power_model(opf1; backend=CUDABackend())
   s = MadNLPSolver(model; tol=1e-6)
   solve!(s)
+  println()
 end
 
 # CPU
+println("--- CPU ---")
 model = ac_power_model(opf1)
 s = MadNLPSolver(model; tol=1e-6)
 solve!(s)
@@ -51,13 +54,16 @@ opf2 = "pglib_opf_case78484_epigrids.m"
 
 # GPU
 if CUDA.functional()
+  println("--- GPU ---")
   # It will automatically download the case file for you.
   model = ac_power_model(opf2; backend=CUDABackend())
   s = MadNLPSolver(model; tol=1e-6)
   solve!(s)
+  println()
 end
 
 # CPU
+println("--- CPU ---")
 model = ac_power_model(opf2)
 s = MadNLPSolver(model; tol=1e-6)
 solve!(s)

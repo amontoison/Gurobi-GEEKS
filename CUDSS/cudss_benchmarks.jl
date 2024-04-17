@@ -20,6 +20,7 @@ x_cpu = similar(b_cpu)
 
 # GPU
 if CUDA.functional()
+    println("--- GPU ---")
     A_gpu = CuSparseMatrixCSR(A_cpu)
     b_gpu = CuVector(b_cpu)
     x_gpu = CuVector(x_cpu)
@@ -46,9 +47,11 @@ if CUDA.functional()
     r_gpu = b_gpu - A_gpu * x_gpu
     rNorm = norm(r_gpu)
     println("Residual norm ‖b - Ax‖: $rNorm.")
+    println()
 end
 
 # CPU
+println("--- CPU ---")
 A_cholmod = SparseArrays.CHOLMOD.Sparse(A_cpu)
 
 time_analysis = @elapsed begin
