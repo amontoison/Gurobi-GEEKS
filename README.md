@@ -18,7 +18,7 @@ julia> include("madnlp_benchmarks.jl")
 cd CUDSS
 julia --project
 ```
-````julia
+```julia
 julia> ]
 (MadNLP) pkg> instantiate
 julia> include("cudss_benchmarks.jl")
