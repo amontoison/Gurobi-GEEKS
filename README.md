@@ -1,7 +1,5 @@
 # Gurobi-GEEKS
 
-https://exanauts.github.io/
-
 ## MadNLP
 
 ```
